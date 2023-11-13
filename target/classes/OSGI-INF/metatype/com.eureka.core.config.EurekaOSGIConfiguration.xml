@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<metatype:MetaData xmlns:metatype="http://www.osgi.org/xmlns/metatype/v1.2.0" localization="OSGI-INF/l10n/com.eureka.core.config.EurekaOSGIConfiguration">
+  <OCD id="com.eureka.core.config.EurekaOSGIConfiguration" name="Eureka OSGI Modularization" description="Modularization of OSGI Configurations">
+    <AD id="getServiceName" type="String" name="Service Name" description="Enter the service name." default="Modular\ Service"/>
+    <AD id="getServiceDescription" type="String" name="Service Description" description="Provide the service description." default="Modular\ Service\ Description"/>
+  </OCD>
+  <Designate pid="com.eureka.core.services.impl.EurekaOSGIConfigurationImpl">
+    <Object ocdref="com.eureka.core.config.EurekaOSGIConfiguration"/>
+  </Designate>
+</metatype:MetaData>

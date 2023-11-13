@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<metatype:MetaData xmlns:metatype="http://www.osgi.org/xmlns/metatype/v1.2.0" localization="OSGI-INF/l10n/com.eureka.core.services.impl.OSGIConfigImpl$ServiceConfig">
+  <OCD id="com.eureka.core.services.impl.OSGIConfigImpl$ServiceConfig" name="Eureka - OSGI Configuraton" description="Study of OSGI configuration">
+    <AD id="getServiceName" type="String" name="Service Name" description="Enter service name." default="Eureka"/>
+    <AD id="getServiceDescription" type="String" name="Service Description" description="Enter service description" default="Description"/>
+  </OCD>
+  <Designate pid="com.eureka.core.services.impl.OSGIConfigImpl">
+    <Object ocdref="com.eureka.core.services.impl.OSGIConfigImpl$ServiceConfig"/>
+  </Designate>
+</metatype:MetaData>
